@@ -1,3 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+          margin: 0;
+        }
+
+        .wrapper {
+          position: relative;
+          z-index: 1;
+          display: inline-block;
+          width: 100vw;
+        }
+
+        .hidefooter {
+          position: absolute;
+          width: 150px;
+          height: 35px;
+          background: rgb(242,240,246);
+          right: 0px;
+          bottom: 0px;
+          z-index: 2;
+          display: block;
+          color: rgb(0, 0, 0);
+        }
+    
+        iframe {
+          display: block;
+          background: #ffffff;
+          border: none;
+          height: 99vh;
+          width: 50vw;
+        }
+        </style>    
+
+</head>
+<body>
+  <div class="wrapper">
+    <div class="hidefooter"></div>
+    <iframe src="https://integrity-ai.streamlit.app/?embed=true" scrolling="no">
+        <p>Your browser doesn't support iframes</p>
+    </iframe>
+    </div>
+</body>
+</html>
+
 <!--
 <!DOCTYPE html>
 <style>
@@ -60,49 +107,3 @@ iframe {
 </div>
 -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        body {
-          margin: 0;
-        }
-
-        .wrapper {
-          position: relative;
-          z-index: 1;
-          display: inline-block;
-          width: 100vw;
-        }
-
-        .hidefooter {
-          position: absolute;
-          width: 150px;
-          height: 35px;
-          background: rgb(242,240,246);
-          right: 0px;
-          bottom: 0px;
-          z-index: 2;
-          display: block;
-          color: rgb(0, 0, 0);
-        }
-    
-        iframe {
-          display: block;
-          background: #ffffff;
-          border: none;
-          height: 99vh;
-          width: 50vw;
-        }
-        </style>    
-
-</head>
-<body>
-  <div class="wrapper">
-    <div class="hidefooter"></div>
-    <iframe src="https://integrity-ai.streamlit.app/?embed=true" scrolling="no">
-        <p>Your browser doesn't support iframes</p>
-    </iframe>
-    </div>
-</body>
-</html>
