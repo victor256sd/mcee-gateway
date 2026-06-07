@@ -3,6 +3,14 @@
 </head>
 
 <style>
+    html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Disables browser-level scrolling completely */
+  }
+  
   .st-iframe-container {
     position: relative;
     width: 100%;
@@ -19,6 +27,8 @@
     width: 100%;
     height: 100%;
     border: none;
+    overflow-y: auto; /* Forces vertical scroll inside the iframe */
+    -webkit-overflow-scrolling: touch; /* Fixes inertia-scroll lag on iOS Safari */
   }
 </style>
 
